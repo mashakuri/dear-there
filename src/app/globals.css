@@ -1,26 +1,53 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Vintage postcard palette */
+  --linen: #ede8dc;
+  --ink: #2d2d4e;
+  --dusty-blue: #8a9ba8;
+  --sage: #9caf88;
+  --lavender: #a699b3;
+  --mist: #e8e6e3;
+  --terracotta: #c17f59;
+  --dusty-rose: #c4a4a4;
+  --pale-olive: #d4d9c4;
+  --background: var(--linen);
+  --foreground: var(--ink);
+  color-scheme: light;
 }
 
 @theme inline {
+  --color-linen: var(--linen);
+  --color-ink: var(--ink);
+  --color-dusty-blue: var(--dusty-blue);
+  --color-sage: var(--sage);
+  --color-lavender: var(--lavender);
+  --color-mist: var(--mist);
+  --color-terracotta: var(--terracotta);
+  --color-dusty-rose: var(--dusty-rose);
+  --color-pale-olive: var(--pale-olive);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-dear), cursive;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
+  background-image: radial-gradient(
+      ellipse 120% 80% at 50% -20%,
+      rgb(212 217 196 / 0.35),
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 90% 60% at 100% 100%,
+      rgb(166 153 179 / 0.12),
+      transparent 50%
+    );
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: rgb(193 127 89 / 0.25);
 }
