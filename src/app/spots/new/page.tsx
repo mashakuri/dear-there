@@ -24,8 +24,7 @@ export default async function NewSpotPage({ searchParams }: Props) {
           Write a new note
         </h1>
         <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-[#2d2d4e]/75 sm:text-base">
-          Choose postcard or letter, then write as if it came from your desk:
-          soft paper tones, handwritten lines, and a seal to send it off.
+        choose your format
         </p>
       </div>
       <div className="mx-auto mt-8 max-w-5xl">
