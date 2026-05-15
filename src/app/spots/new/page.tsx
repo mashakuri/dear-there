@@ -23,9 +23,6 @@ export default async function NewSpotPage({ searchParams }: Props) {
         <h1 className="font-display text-center text-4xl font-semibold text-[#2d2d4e] sm:text-5xl">
           Write a new note
         </h1>
-        <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-[#2d2d4e]/75 sm:text-base">
-        choose your format
-        </p>
       </div>
       <div className="mx-auto mt-8 max-w-5xl">
         <NewEntryForm

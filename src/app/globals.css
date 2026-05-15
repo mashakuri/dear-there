@@ -1,17 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  /* Vintage postcard palette */
-  --linen: #ede8dc;
-  --ink: #2d2d4e;
-  --dusty-blue: #8a9ba8;
-  --sage: #9caf88;
-  --lavender: #a699b3;
-  --mist: #e8e6e3;
-  --terracotta: #c17f59;
-  --dusty-rose: #c4a4a4;
-  --pale-olive: #d4d9c4;
-  --background: #f5f4f0;
+  --linen: #f0f0ed;
+  --ink: #1e2535;
+  --dusty-blue: #4a6fa5;
+  --sage: #5a8a72;
+  --lavender: #7c6fa8;
+  --mist: #e8eaec;
+  --terracotta: #5a6fa5;
+  --dusty-rose: #8a7fa8;
+  --pale-olive: #d4dde4;
+  --background: #ededea;
   --foreground: var(--ink);
   color-scheme: light;
 }
@@ -34,20 +33,10 @@
 
 body {
   background-color: var(--background);
-  background-image: radial-gradient(
-      ellipse 120% 80% at 50% -20%,
-      rgb(212 217 196 / 0.35),
-      transparent 55%
-    ),
-    radial-gradient(
-      ellipse 90% 60% at 100% 100%,
-      rgb(166 153 179 / 0.12),
-      transparent 50%
-    );
   color: var(--foreground);
   font-family: var(--font-sans);
 }
 
 ::selection {
-  background: rgb(193 127 89 / 0.25);
+  background: rgb(74 111 165 / 0.15);
 }
